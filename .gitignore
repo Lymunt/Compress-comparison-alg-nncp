@@ -1,0 +1,5 @@
+build/
+.DS_Store
+third_party/nncp/*.o
+third_party/nncp/*.d
+third_party/nncp/nncp

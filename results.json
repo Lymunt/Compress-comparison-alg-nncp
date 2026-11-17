@@ -1,0 +1,87 @@
+{
+  "platform": "Linux 6.18.56 x86_64",
+  "datasets_supplied": false,
+  "shuffle_seed": 42,
+  "compression_runs": 1,
+  "nncp": {"profile": "default", "threads": 1, "device": "cpu"},
+  "results": [
+    {
+      "dataset": "Original",
+      "method": "Arithmetic",
+      "input_bytes": 32768,
+      "compressed_bytes": 19535,
+      "compression_ratio": 1.67739953928846,
+      "compressed_bits_per_byte": 4.769287109375,
+      "empirical_entropy_bits_per_byte": 4.72413752446446,
+      "distinct_bytes": 58,
+      "compression_seconds_median": 0.001062375,
+      "compression_seconds_each_run": [0.001062375],
+      "round_trip_equal": true
+    },
+    {
+      "dataset": "Original",
+      "method": "NNCP",
+      "input_bytes": 32768,
+      "compressed_bytes": 17804,
+      "compression_ratio": 1.8404852842058,
+      "compressed_bits_per_byte": 4.3466796875,
+      "empirical_entropy_bits_per_byte": 4.72413752446446,
+      "distinct_bytes": 58,
+      "compression_seconds_median": 17.107020217,
+      "compression_seconds_each_run": [17.107020217],
+      "round_trip_equal": true
+    },
+    {
+      "dataset": "Shuffled",
+      "method": "Arithmetic",
+      "input_bytes": 32768,
+      "compressed_bytes": 19535,
+      "compression_ratio": 1.67739953928846,
+      "compressed_bits_per_byte": 4.769287109375,
+      "empirical_entropy_bits_per_byte": 4.72413752446446,
+      "distinct_bytes": 58,
+      "compression_seconds_median": 0.00094975,
+      "compression_seconds_each_run": [0.00094975],
+      "round_trip_equal": true
+    },
+    {
+      "dataset": "Shuffled",
+      "method": "NNCP",
+      "input_bytes": 32768,
+      "compressed_bytes": 21207,
+      "compression_ratio": 1.54515018625925,
+      "compressed_bits_per_byte": 5.177490234375,
+      "empirical_entropy_bits_per_byte": 4.72413752446446,
+      "distinct_bytes": 58,
+      "compression_seconds_median": 17.0346773,
+      "compression_seconds_each_run": [17.0346773],
+      "round_trip_equal": true
+    },
+    {
+      "dataset": "Repeated",
+      "method": "Arithmetic",
+      "input_bytes": 32768,
+      "compressed_bytes": 18276,
+      "compression_ratio": 1.79295250601882,
+      "compressed_bits_per_byte": 4.4619140625,
+      "empirical_entropy_bits_per_byte": 4.43592319178622,
+      "distinct_bytes": 32,
+      "compression_seconds_median": 0.000868667,
+      "compression_seconds_each_run": [0.000868667],
+      "round_trip_equal": true
+    },
+    {
+      "dataset": "Repeated",
+      "method": "NNCP",
+      "input_bytes": 32768,
+      "compressed_bytes": 12163,
+      "compression_ratio": 2.69407218613829,
+      "compressed_bits_per_byte": 2.969482421875,
+      "empirical_entropy_bits_per_byte": 4.43592319178622,
+      "distinct_bytes": 32,
+      "compression_seconds_median": 16.901390842,
+      "compression_seconds_each_run": [16.901390842],
+      "round_trip_equal": true
+    }
+  ]
+}
